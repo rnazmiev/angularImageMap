@@ -1,0 +1,33 @@
+{
+  "areas": [
+    {
+      "id": "area1",
+      "type": "polyline",
+      "coordinates": [[51, 220], [162, 158], [270, 224], [168, 293]],
+      "color": "#666",
+      "name": "Area 1"
+    },
+    {
+      "id": "component1",
+      "type": "component",
+      "coordinates": [[160,170], [154,262], [252,224], [218,196]],
+      "color": "yellow",
+      "name": "Компонент 1"
+    },
+    {
+      "id": "Tag",
+      "type": "tag",
+      "coordinates": [[173,216], [182,235], [211,224], [203,203]],
+      "color": "green",
+      "name": "Tag 1"
+    }
+  ],
+  "bindings": [
+    { "loop": "Area 1" },
+    { "tag": "Example Tag" },
+    { "component": "Example Component" }
+  ]
+}
+
+
+

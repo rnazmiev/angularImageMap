@@ -1,0 +1,19 @@
+<div>
+  <!-- <input type="file" (change)="onFileSelected($event)" accept="image/*" /> -->
+
+  <svg #svgElement id="image-editor" width="800" height="600" style="border: 1px solid #000;"></svg>
+
+  <div id="contextMenu" style="display: none; position: absolute; background-color: white; border: 1px solid #ccc; padding: 5px;">
+    <div (click)="openModal('loop')">Контур</div>
+    <div (click)="openModal('tag')">Тэг</div>
+    <div (click)="openModal('component')">Компонент</div>
+  </div>
+
+  <div id="modal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border: 1px solid #ccc;">
+    <h3>Введите название</h3>
+    <input type="text" [(ngModel)]="inputText" />
+    <button (click)="saveBinding()">OK</button>
+    <button (click)="closeModal()">Cancel</button>
+  </div>
+
+</div>
